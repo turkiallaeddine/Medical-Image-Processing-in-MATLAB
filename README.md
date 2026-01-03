@@ -42,6 +42,12 @@ English:
 1. فهم ما هي الصورة وكيف تمثل البيانات الواقعية.  
 2. التعرف على أنواع الصور الطبية وخصائصها.  
 3. مقدمة عن صيغة DICOM كالمعيار الأساسي للصور الطبية.
+### What is an Image? / ما هي الصورة؟
+English:  
+An image is a 2D or 3D matrix, where each element represents the brightness or color of a pixel. In medical imaging, this value may indicate bone density, tissue intensity, or blood flow at that location.
+
+العربية:  
+الصورة عبارة عن مصفوفة ثنائية أو ثلاثية الأبعاد، حيث يحتوي كل عنصر في المصفوفة على قيمة تمثل سطوع أو لون البكسل. في الصور الطبية، هذه القيمة قد تمثل كثافة العظم، أو الأنسجة، أو تدفق الدم في ذلك الموقع.
 
 ---
 ## Part 2: Types of Medical Images / الجزء 2: أنواع الصور الطبية
@@ -127,9 +133,3 @@ Most medical images you will work with in MATLAB are grayscale or DICOM, because
 | RGB / ملونة | Colored microscopic images | Rare in medical scans |
 | Binary / ثنائية | Segmentation mask | After image processing |
 | DICOM | CT, MRI, Ultrasound | Contains metadata for analysis |
-### What is an Image? / ما هي الصورة؟
-English:  
-An image is a 2D or 3D matrix, where each element represents the brightness or color of a pixel. In medical imaging, this value may indicate bone density, tissue intensity, or blood flow at that location.
-
-العربية:  
-الصورة عبارة عن مصفوفة ثنائية أو ثلاثية الأبعاد، حيث يحتوي كل عنصر في المصفوفة على قيمة تمثل سطوع أو لون البكسل. في الصور الطبية، هذه القيمة قد تمثل كثافة العظم، أو الأنسجة، أو تدفق الدم في ذلك الموقع.
