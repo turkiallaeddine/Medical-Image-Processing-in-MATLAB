@@ -133,3 +133,74 @@ Most medical images you will work with in MATLAB are grayscale or DICOM, because
 | RGB / ملونة | Colored microscopic images | Rare in medical scans |
 | Binary / ثنائية | Segmentation mask | After image processing |
 | DICOM | CT, MRI, Ultrasound | Contains metadata for analysis |
+
+
+
+
+
+## Part 3: Image Properties / الجزء 3: خصائص الصور الطبية
+
+### Introduction / مقدمة
+English:  
+Medical images have several properties that are important to understand before processing them. These properties help in analyzing, measuring, and enhancing the images in MATLAB.
+
+العربية:  
+الصور الطبية لها عدة خصائص مهمة يجب فهمها قبل معالجتها. تساعد هذه الخصائص في تحليل الصور وقياسها وتحسينها في MATLAB.
+
+---
+
+### 1️⃣ Dimensions / الأبعاد
+English:  
+- Dimensions indicate the height (rows) and width (columns) of an image.  
+- Example: a 512x512 image has 512 rows and 512 columns.
+
+العربية:  
+- الأبعاد تمثل الارتفاع (عدد الصفوف) والعرض (عدد الأعمدة) للصورة.  
+- مثال: الصورة 512x512 تحتوي على 512 صف و512 عمود.
+
+---
+
+### 2️⃣ Bit Depth / عمق البكسل
+English:  
+- Bit depth determines the number of gray levels a pixel can have.  
+- Common depths: 8-bit (0–255), 16-bit (0–65535).  
+- Higher bit depth = more precise intensity representation.
+
+العربية:  
+- عمق البكسل يحدد عدد درجات الرمادي التي يمكن أن يحتويها البكسل.  
+- الأعماق الشائعة: 8-bit (0–255)، 16-bit (0–65535).  
+- عمق أكبر = دقة أعلى في تمثيل شدة البكسل.
+
+---
+
+### 3️⃣ Pixel Values / قيم البكسل
+English:  
+- Each pixel has a numerical value representing intensity.  
+- In grayscale images: 0 = black, 255 = white (8-bit).  
+- These values are used for contrast adjustment, filtering, and segmentation.
+
+العربية:  
+- كل بكسل له قيمة رقمية تمثل الشدة.  
+- في الصور الرمادية: 0 = أسود، 255 = أبيض (8-bit).  
+- تُستخدم هذه القيم في تحسين التباين، الفلاتر، والتقطيع.
+
+---
+
+### 4️⃣ Pixel Spacing / المسافة بين البكسلات
+English:  
+- Pixel spacing represents the real-world distance between two adjacent pixels (usually in millimeters).  
+- Important for accurate measurements in medical images.
+
+العربية:  
+- المسافة بين البكسلات تمثل المسافة الحقيقية بين البكسلين المتجاورين (عادة بالملم).  
+- مهمة للحصول على قياسات دقيقة في الصور الطبية.
+
+---
+
+### Optional: Example Table / جدول توضيحي
+| Property / الخاصية | Example / المثال | Notes / ملاحظات |
+|------------------|----------------|----------------|
+| Dimensions / الأبعاد | 512x512 | Rows x Columns |
+| Bit Depth / عمق البكسل | 8-bit, 16-bit | Number of gray levels |
+| Pixel Values / قيم البكسل | 0–255 | Intensity in grayscale |
+| Pixel Spacing / المسافة بين البكسلات | 0.5 mm | Real-world size per pixel |
